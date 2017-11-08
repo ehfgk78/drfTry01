@@ -16,4 +16,4 @@ class Snippet(models.Model):
     style = models.CharField(choices=STYLE_CHOICES, default='monokai', max_length=100)
 
     class Meta:
-        ordering = ('created',)
+        ordering = ('created_at',)
