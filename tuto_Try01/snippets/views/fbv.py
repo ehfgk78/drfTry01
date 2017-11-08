@@ -2,9 +2,13 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from snippets.serializers import SnippetSerializer
-from .models import Snippet
+from ..serializers import SnippetSerializer
+from ..models import Snippet
 
+__all__ = (
+    'snippet_list',
+    'snippet_detail',
+)
 
 # 이 뷰는 api_view형태로 동작함 (request에 HttpRequest가 아닌 Request가 주어짐)
 # GET, POST요청에 대해서만 동작하도록 함
