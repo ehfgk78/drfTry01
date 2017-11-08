@@ -26,9 +26,22 @@ SECRET_KEY = 'eqk26-uplb)o5=^rm-iy^+)z=v%4!pyr^y1e4@2*5wj4@zw^zq'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'auth.User'
 
 # Application definition
+
+# DRF
+# REST_FRAMEWORK = {
+#     'DEFAULT_RENDERER_CLASSES': (
+#         'rest_framework.renderers.JSONRenderer',
+#         'rest_framework.renderers.BrowsableAPIRenderer',
+#         'rest_framework_xml.renderers.XMLRenderer',
+#     ),
+#     'DEFAULT_PARSER_CLASSES': (
+#         'rest_framework.parsers.JSONParser',
+#         'rest_framework_xml.parsers.XMLParser',
+#     )
+# }
 
 INSTALLED_APPS = [
     'django.contrib.admin',
