@@ -38,9 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+# 3rd party
     'django_extensions',
     'rest_framework',
-    'snippets.apps.SnippetsConfig',
+    
+# user
+    'snippets'
 ]
 
 MIDDLEWARE = [
